@@ -8,5 +8,5 @@ podman build --tag systemd .
 ```
 and then run the container with
 ``` {.bash .execution}
-podman run --rm --name systemd systemd
+podman run --tty --rm --name systemd systemd
 ```
