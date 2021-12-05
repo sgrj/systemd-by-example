@@ -1,0 +1,6 @@
+[Unit]
+Description=Halt systemd
+DefaultDependencies=no
+
+[Service]
+ExecStart=systemctl --force halt

@@ -1,0 +1,8 @@
+[Unit]
+Before=c.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=sleep 3
+ExecStop=sleep 1

@@ -1,0 +1,7 @@
+[Unit]
+Description=Journal Service
+DefaultDependencies=no
+
+[Service]
+ExecStart=/lib/systemd/systemd-journald
+Sockets=systemd-journald.socket

@@ -1,0 +1,9 @@
+[Unit]
+Before=e.service
+Wants=a.service b.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=sleep 1
+ExecStop=sleep 1

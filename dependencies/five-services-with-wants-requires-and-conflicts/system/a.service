@@ -1,0 +1,9 @@
+[Unit]
+Requires=b.service
+After=b.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=sleep 1
+ExecStop=sleep 1
